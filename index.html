@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Logesh S – B.Sc AI & ML Student, COO at Innovate Graphicz, Aspiring Web Developer. Portfolio showcasing skills, projects, and experience." />
+  <title>Logesh S | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo" aria-label="Logesh S – Home">Portfolio</a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <div class="hero-container">
+
+      <!-- Left: Text Content -->
+      <div class="hero-content">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Logesh S</h1>
+        <p class="hero-tagline">B.Sc AI &amp; ML Student &nbsp;|&nbsp; COO at Innovate Graphicz &nbsp;|&nbsp; Aspiring Web Developer</p>
+        <p class="hero-description">
+          I'm a B.Sc Artificial Intelligence &amp; Machine Learning student passionate about technology,
+          web development, digital marketing, and building practical solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Right: Profile Image -->
+      <div class="hero-image-wrap">
+        <div class="hero-image-frame">
+          <img
+            src="images/profile.jpg"
+            alt="Profile photo of Logesh S"
+            class="hero-image"
+            id="profile-img"
+            onerror="this.style.display='none'; document.getElementById('profile-fallback').style.display='flex';"
+          />
+          <!-- Fallback avatar when no image is provided -->
+          <div class="profile-fallback" id="profile-fallback" aria-hidden="true">
+            <i class="fa-solid fa-user"></i>
+            <span>Logesh S</span>
+          </div>
+        </div>
+        <!-- Decorative dots -->
+        <div class="hero-dots" aria-hidden="true"></div>
+      </div>
+
+    </div>
+
+    <!-- Scroll down hint -->
+    <a href="#about" class="scroll-hint" aria-label="Scroll to About section">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="section about" id="about" aria-label="About Me">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">Get to Know Me</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Bio Text -->
+        <div class="about-text">
+          <p>
+            I'm currently pursuing my <strong>B.Sc in Artificial Intelligence &amp; Machine Learning</strong>
+            at KPR College of Arts, Science and Research. I'm interested in web development,
+            programming, digital marketing, and technology-driven solutions.
+          </p>
+          <p>
+            Along with academics, I'm gaining practical experience through projects, internships,
+            and leadership responsibilities. I enjoy learning new technologies, working with teams,
+            and turning ideas into useful solutions.
+          </p>
+          <p>
+            My current career goal is to become a skilled <strong>Web Developer</strong> while
+            continuously improving my technical and professional skills.
+          </p>
+
+          <!-- Strengths List -->
+          <div class="strengths">
+            <h3>Strengths</h3>
+            <ul class="strength-list" role="list">
+              <li><i class="fa-solid fa-bolt" aria-hidden="true"></i> Quick Learner</li>
+              <li><i class="fa-solid fa-users" aria-hidden="true"></i> Teamwork</li>
+              <li><i class="fa-solid fa-crown" aria-hidden="true"></i> Leadership</li>
+              <li><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i> Problem Solving</li>
+              <li><i class="fa-solid fa-comment-dots" aria-hidden="true"></i> Communication</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Info Cards -->
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></div>
+            <h4>Education</h4>
+            <p>B.Sc AI &amp; ML<br /><small>KKPRCAS</small></p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></div>
+            <h4>Current Role</h4>
+            <p>COO<br /><small>Innovate Graphicz</small></p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-bullseye" aria-hidden="true"></i></div>
+            <h4>Career Goal</h4>
+            <p>Web Developer</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon rotaract-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
+            <h4>Rotaract</h4>
+            <p>Finance Committee<br /><small>Chairman</small></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section class="section skills" id="skills" aria-label="Skills">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">What I Work With</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Java -->
+        <div class="skill-card">
+          <div class="skill-icon java-icon">
+            <i class="fa-brands fa-java" aria-hidden="true"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <h3>Java</h3>
+              <span class="skill-badge beginner">Beginner</span>
+            </div>
+            <p>Learning object-oriented programming and building beginner-level applications.</p>
+          </div>
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-card">
+          <div class="skill-icon html-icon">
+            <i class="fa-brands fa-html5" aria-hidden="true"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <h3>HTML</h3>
+              <span class="skill-badge intermediate">Intermediate</span>
+            </div>
+            <p>Building structured, semantic, and accessible website layouts.</p>
+          </div>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card">
+          <div class="skill-icon css-icon">
+            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <h3>CSS</h3>
+              <span class="skill-badge intermediate">Intermediate</span>
+            </div>
+            <p>Building responsive and clean website interfaces with modern styling.</p>
+          </div>
+        </div>
+
+        <!-- Digital Marketing -->
+        <div class="skill-card">
+          <div class="skill-icon marketing-icon">
+            <i class="fa-solid fa-bullhorn" aria-hidden="true"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <h3>Digital Marketing</h3>
+              <span class="skill-badge intermediate">Intermediate</span>
+            </div>
+            <p>Understanding digital branding, content strategy, and online marketing.</p>
+          </div>
+        </div>
+
+        <!-- MS Excel -->
+        <div class="skill-card">
+          <div class="skill-icon excel-icon">
+            <i class="fa-solid fa-table" aria-hidden="true"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <h3>MS Excel</h3>
+              <span class="skill-badge intermediate">Intermediate</span>
+            </div>
+            <p>Working with spreadsheets, formulas, and basic data organization.</p>
+          </div>
+        </div>
+
+        <!-- Tally ERP 9 -->
+        <div class="skill-card">
+          <div class="skill-icon tally-icon">
+            <i class="fa-solid fa-calculator" aria-hidden="true"></i>
+          </div>
+          <div class="skill-info">
+            <div class="skill-header">
+              <h3>Tally ERP 9</h3>
+              <span class="skill-badge learning">Learning</span>
+            </div>
+            <p>Learning accounting fundamentals and business transaction management.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE SECTION ===================== -->
+  <section class="section experience" id="experience" aria-label="Experience">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">My Journey</p>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+
+          <!-- Timeline dot -->
+          <div class="timeline-dot" aria-hidden="true">
+            <i class="fa-solid fa-briefcase"></i>
+          </div>
+
+          <!-- Content Card -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Chief Operating Officer (COO)</h3>
+                <p class="timeline-company">
+                  <i class="fa-solid fa-building" aria-hidden="true"></i>
+                  Innovate Graphicz
+                </p>
+              </div>
+              <span class="timeline-badge">Current</span>
+            </div>
+
+            <p class="timeline-description">
+              Gained practical experience in startup operations, digital marketing, teamwork,
+              coordination, and team leadership at Innovate Graphicz.
+            </p>
+
+            <div class="responsibilities">
+              <h4>Key Responsibilities</h4>
+              <ul class="resp-list" role="list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Operations coordination</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Team collaboration</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Digital marketing</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Event coordination</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Planning and execution</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Communication</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Startup operations</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Rotaract -->
+        <div class="timeline-item">
+
+          <!-- Timeline dot -->
+          <div class="timeline-dot rotaract-dot" aria-hidden="true">
+            <i class="fa-solid fa-rotate"></i>
+          </div>
+
+          <!-- Content Card -->
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Finance Committee Chairman</h3>
+                <p class="timeline-company">
+                  <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+                  Rotaract Club
+                </p>
+              </div>
+              <span class="timeline-badge">Current</span>
+            </div>
+
+            <p class="timeline-description">
+              Serving as Finance Committee Chairman in the Rotaract Club, overseeing financial planning,
+              budgeting, and fund management for club events and community service activities.
+            </p>
+
+            <div class="responsibilities">
+              <h4>Key Responsibilities</h4>
+              <ul class="resp-list" role="list">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Financial planning</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Budget management</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Fund coordination</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Event finance</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Community service</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Team leadership</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section class="section projects" id="projects" aria-label="Projects">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">Things I've Built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: ComicCraft -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+          <h3 class="project-title">ComicCraft</h3>
+          <p class="project-desc">
+            An AI-powered comic creation project that helps users generate comic stories
+            and visual panels using AI technologies.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Jinja2</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">AI APIs</span>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="btn btn-project" aria-label="View ComicCraft project">
+              View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: PayShield -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <span class="project-number">02</span>
+          </div>
+          <h3 class="project-title">PayShield</h3>
+          <p class="project-desc">
+            An escrow and trust-layer concept designed to provide safer payment interactions
+            between freelancers and clients, especially for students and early-career freelancers.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Concept Design</span>
+            <span class="tech-tag">Web Development</span>
+            <span class="tech-tag">Digital Payments</span>
+            <span class="tech-tag">UI/UX</span>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="btn btn-project" aria-label="View PayShield project">
+              View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Portfolio -->
+        <article class="project-card">
+          <div class="project-top">
+            <div class="project-icon">
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+          <h3 class="project-title">Personal Portfolio</h3>
+          <p class="project-desc">
+            A responsive personal portfolio website showcasing my skills, education,
+            experience, and projects.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <div class="project-footer">
+            <a href="#home" class="btn btn-project" aria-label="View Portfolio project (this site)">
+              View Project <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <section class="section education" id="education" aria-label="Education">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">Academic Background</p>
+        <h2 class="section-title">Education</h2>
+      </div>
+
+      <!-- Education Cards: 3 side by side -->
+      <div class="edu-cards-grid">
+
+        <!-- 10th Standard -->
+        <div class="edu-card-mini">
+          <div class="edu-card-icon school-icon" aria-hidden="true">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <div class="edu-card-body">
+            <span class="edu-card-level">10th Standard</span>
+            <h3 class="edu-card-degree">SSLC</h3>
+            <p class="edu-card-school">State Board</p>
+          </div>
+        </div>
+
+        <!-- 12th Standard -->
+        <div class="edu-card-mini">
+          <div class="edu-card-icon hsc-icon" aria-hidden="true">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+          <div class="edu-card-body">
+            <span class="edu-card-level">12th Standard</span>
+            <h3 class="edu-card-degree">HSC</h3>
+            <p class="edu-card-school">State Board</p>
+          </div>
+        </div>
+
+        <!-- College -->
+        <div class="edu-card-mini edu-card-active">
+          <div class="edu-card-icon clg-icon" aria-hidden="true">
+            <i class="fa-solid fa-university"></i>
+          </div>
+          <div class="edu-card-body">
+            <span class="edu-card-level">Undergraduate <span class="edu-current-tag">Current</span></span>
+            <h3 class="edu-card-degree">B.Sc AI &amp; ML</h3>
+            <p class="edu-card-school">KKPRCAS</p>
+            <p class="edu-card-desc">
+              Currently developing foundational knowledge in artificial intelligence,
+              machine learning, programming, and computer science.
+            </p>
+            <div class="edu-subjects">
+              <span class="subject-tag">Artificial Intelligence</span>
+              <span class="subject-tag">Machine Learning</span>
+              <span class="subject-tag">Programming</span>
+              <span class="subject-tag">Computer Science</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Certification -->
+      <div class="cert-section" id="certification" aria-label="Certification">
+        <h3 class="cert-heading">Certification</h3>
+        <div class="cert-card">
+          <div class="cert-icon" aria-hidden="true">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="cert-info">
+            <h4>PGDCA</h4>
+            <p>Post Graduate Diploma in Computer Applications</p>
+            <span class="cert-desc">Professional certification in computer applications and related technical skills.</span>
+          </div>
+          <div class="cert-check" aria-label="Completed">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="section contact" id="contact" aria-label="Contact">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">Reach Out</p>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+          Interested in working together, discussing ideas, or connecting with me?
+          Feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:logeshshivakumar2008@gmail.com" class="contact-value">
+                logeshshivakumar2008@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon linkedin-ci">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a
+                href="https://www.linkedin.com/in/logesh-s-3440a2377/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-value"
+              >
+                linkedin.com/in/logesh-s
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon github-ci">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-value"
+              >
+                github.com/logesh-s
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon phone-ci">
+              <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+91XXXXXXXXXX" class="contact-value">+91 XXXXX XXXXX</a>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:logeshshivakumar2008@gmail.com" class="social-btn" aria-label="Send Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/logesh-s-3440a2377/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+              aria-label="LinkedIn Profile"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-btn"
+              aria-label="GitHub Profile"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="tel:+91XXXXXXXXXX" class="social-btn" aria-label="Call">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="e.g. Priya Sharma"
+                required
+                aria-required="true"
+                autocomplete="name"
+              />
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="e.g. priya@example.com"
+                required
+                aria-required="true"
+                autocomplete="email"
+              />
+              <span class="form-error" id="email-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+            </button>
+
+            <!-- Notice: No backend configured -->
+            <p class="form-notice">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              This form is for demonstration. For direct contact, email me at
+              <a href="mailto:logeshshivakumar2008@gmail.com">logeshshivakumar2008@gmail.com</a>
+            </p>
+
+            <!-- Success Message -->
+            <div class="form-success" id="form-success" role="alert" aria-live="polite" hidden>
+              <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+              <p>Thank you for your message! I'll get back to you soon. For quicker responses, email me directly.</p>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+
+      <div class="footer-brand">
+        <p class="footer-name">Logesh S</p>
+        <p class="footer-tagline">B.Sc AI &amp; ML Student | Aspiring Web Developer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:logeshshivakumar2008@gmail.com" class="footer-link" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/logesh-s-3440a2377/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-link"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#" class="footer-link" aria-label="GitHub (coming soon)">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+
+      <p class="footer-copy">© 2026 Logesh S. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
